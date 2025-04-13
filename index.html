@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Keeper</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script defer src="app.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <div class="max-w-xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">Password Manager</h1>
+
+    <div id="user-info" class="mb-4 hidden">
+      <button id="logout" class="bg-red-500 px-3 py-1 rounded">Logout</button>
+    </div>
+
+    <button id="login" class="bg-blue-600 px-4 py-2 rounded mb-4">Login with Google</button>
+
+    <form id="password-form" class="space-y-2 hidden">
+      <input id="site" type="text" placeholder="Website" class="w-full p-2 bg-gray-800 rounded" required />
+      <input id="email" type="email" placeholder="Email" class="w-full p-2 bg-gray-800 rounded" required />
+      <input id="password" type="text" placeholder="Password" class="w-full p-2 bg-gray-800 rounded" required />
+      <button class="bg-green-600 px-4 py-2 rounded w-full">Save</button>
+    </form>
+
+    <div id="password-list" class="mt-6 space-y-2"></div>
+  </div>
+</body>
+</html>
