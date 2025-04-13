@@ -1,11 +1,12 @@
 // Firebase config - استبدله بمعلومات مشروعك من Firebase Console
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBoPJbx5v6EkOqxOJkbhzHqIJdAByh79Rg",
+  authDomain: "hhhhhh-d4fb8.firebaseapp.com",
+  projectId: "hhhhhh-d4fb8",
+  storageBucket: "hhhhhh-d4fb8.appspot.com",
+  messagingSenderId: "24512338206",
+  appId: "1:24512338206:web:dfe045db59bd3434a2110f",
+  measurementId: "G-HD4R7GNQ5H"
 };
 
 firebase.initializeApp(firebaseConfig);
